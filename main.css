@@ -1,0 +1,346 @@
+/* Set default look for <li> elements */
+*{outline : none;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+ul {margin: 0;
+    padding-top: 20;
+    padding-bottom: 20;
+    background-color : 191919;
+}
+
+li {padding-bottom : 12px;
+    padding-top : 12px;
+    padding-left: 0px;
+    padding-right: 40px;
+    font-weight : normal;
+    text-align: right;
+    list-style: none;
+}
+
+#date {text-align : right;
+    margin-right : 20px;
+    font-size : 12pt;}
+
+#logout {position : fixed;
+    text-align : left;
+    top : 18%;
+    right : -50px;
+    font-size : 12pt;
+    width: 130px;}
+
+
+/* Set the look for the currenctly active navigation tab */
+#active {color: cornflowerblue;
+/*    color : #E62C33;*/
+}
+
+/* Set the look for unactive tabs, and declare :hover pseudo-class */
+#unactive {color : white;}
+#unactive:hover {color: cornflowerblue;
+/*    color : #E62C33;*/
+}
+
+a:link, a:visited{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: "Helvetica";
+    line-height: 150%;
+}
+
+.site-header {
+    background : #ECF0F1;
+    width: 80%;
+    position: fixed;
+    height: 20%;
+    left: 20%;
+    height: 100px;
+    z-index: 1; /*When elemements overlap, will stay on top */
+	box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+div.error{
+    position: relative;
+    color:crimson;
+    left: 20px; 
+}
+
+div.success{
+    position: relative;
+    color:green;
+    left: 20px; 
+}
+
+.site-footer {
+    padding-top: 25px;
+    position: relative;
+    width: 80%;
+    left: 20%;
+    height: 100px;
+    margin-bottom: -75px;
+    background: #333333;
+    text-align: center;
+    color: #ECF0F1;
+    font-weight: lighter;  
+}
+
+.content {
+    min-height: 80%;
+    background: white;
+    position:relative;
+    padding-top: 2%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 70%;
+    top: 100px;
+    left: 20%;
+    overflow-x: hidden;
+}
+
+.sideMenu {
+    background: #191919;
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    overflow: scroll;
+    z-index: 2;
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+    
+img.logo {
+    float: left;
+    height: 60px;
+    padding: 20px;
+    padding-left: 5%;
+}
+
+img.polaroid{
+    background-color: #ECF0F1;
+    padding: 15px;
+    padding-bottom: 50px;
+    border-width: 5px;
+    margin: 5px;
+	box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+img.polaroidShrink50{
+    background-color: #ECF0F1;
+    padding: 15px;
+    padding-bottom: 50px;
+    border-width: 5px;
+    width: 50%;
+    margin: 5px;
+	box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+img.polaroidShrink50:hover{
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+img.friendlyIcon{
+/*    padding-right: 20px;*/
+    width: 50px;
+    vertical-align: center;
+    text-align: right;
+    align-content: right;
+    align-items: right;
+}
+
+/* Inset, by Dan Eden */
+hr{
+    border: 0;
+    height: 0;
+    margin-top:25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h2{
+    -webkit-user-select: text; /* Chrome/Safari */        
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* IE10+ */
+    font-size: 26px;
+    color:dimgray;
+    font-weight: lighter;
+    vertical-align: center;
+}
+
+h1{
+    -webkit-user-select: text; /* Chrome/Safari */        
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* IE10+ */
+    font-size: 30px;
+    color:black;
+    font-weight: lighter;
+    vertical-align: center;
+/*    text-align: center;*/
+}
+
+h3{
+    -webkit-user-select: text; /* Chrome/Safari */        
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* IE10+ */
+    font-size: 20px;
+    color:black;
+    font-weight: lighter;
+    vertical-align: center;
+}
+
+h4{
+/*    used for the clock display*/
+    font-size: 14px;
+    color:dimgray;
+    font-weight: lighter;
+}
+
+.content-center{
+    min-height: 80%;
+    background: white;
+    position:relative;
+    padding-top: 2%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 70%;
+    top: 100px;
+    left: 20%;
+    overflow-x: hidden;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+select{
+    appearance: none;
+    width: 250px;
+    height: 20%;
+    padding: 5px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 0;
+    background-color:#ECF0F1;
+}
+
+select.single{
+    height:10%;
+}
+
+textarea{
+    font-size: 14px;
+    width: 60%;
+    height: 20%;
+    padding: 15px;
+    appearance: none;
+    background-color: #ECF0F1;
+    border: none;   
+}
+
+textarea:hover{
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+table.description{
+    position: relative;
+    min-width: 500px;
+    width: 500px;
+    left: 20%;
+    -webkit-column-gap: 120px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    
+}
+
+input.button{
+    -webkit-transition-duration: 0.4s; /* Safari and Chrome */
+    transition-duration: 0.4s;
+    background-color: dimgray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-right: 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+input.interestedButton{
+    position : absolute;
+    left: 75%;
+    top: -1%;
+    margin-top: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari and Chrome */
+    transition-duration: 0.4s;
+    background-color: dimgray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+/*    margin-right: 5%;*/
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+input.site-text{
+    font-size: 14px;
+    width: 60%;
+    height: 30px;
+    padding: 15px;
+    margin: 5px;
+    appearance: none;
+    background-color: #ECF0F1;
+    border: none;   
+}
+
+
+input.site-text:hover{
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input.button:hover{
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #4CAF50; /* Green */
+}
+
+input.interestedButton:hover{
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #4CAF50; /* Green */
+}
+
+select:hover{
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+p.vr{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+iFrame{
+    padding: 20px;
+}
